@@ -80,7 +80,7 @@ describe('Running sails www', function() {
 			process.chdir('../');
 		});
 
-		it('--dev should execute grunt build', function(done) {
+		it('--dev should execute gulp build', function(done) {
 
 			// Move into app directory
 			process.chdir(appName);
@@ -99,14 +99,14 @@ describe('Running sails www', function() {
 
 			sailsServer.stdout.on('data', function(data) {
 				var dataString = data + '';
-				if (dataString.indexOf("`grunt build`") !== -1) {
+				if (dataString.indexOf("`gulp build`") !== -1) {
 
 					done();
 				}
 			});
 		});
 
-		it('--prod should execute grunt buildProd', function(done) {
+		it('--prod should execute gulp buildProd', function(done) {
 
 			// Move into app directory
 			process.chdir(appName);
@@ -119,7 +119,7 @@ describe('Running sails www', function() {
 
 			sailsServer.stdout.on('data', function(data) {
 				var dataString = data + '';
-				if (dataString.indexOf("`grunt buildProd`") !== -1) {
+				if (dataString.indexOf("`gulp buildProd`") !== -1) {
 
 					done();
 				}

@@ -49,7 +49,7 @@ module.exports = function() {
   cliArguments.pop();
   scope.args = cliArguments;
 
-  scope.generatorType = 'new';
+  scope.generatorType = 'new-gulp';
 
   return sailsgen(scope, {
     success: function() {}
