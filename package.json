@@ -78,6 +78,7 @@
     "prompt": "~0.2.14",
     "rc": "~1.0.1",
     "reportback": "~0.1.8",
+    "rimraf":"*",
     "run-sequence": "1.0.0",
     "sails-build-dictionary": "~0.10.1",
     "sails-disk": "~0.10.7",
